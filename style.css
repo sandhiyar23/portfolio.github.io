@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    position: sticky;
+    top:0;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    margin: 25px 0px;
+}
+.nav ul li{
+    font-family: century;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(6, 91, 91);
+    padding: 8px 25px;
+    transition: all .4s ease;
+}
+.nav ul li a:hover{
+    background-color: rgb(29, 176, 176);
+    color: black;
+    box-shadow: 0 0 10px white;
+   
+
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(43, 76, 105);
+    
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:url('https://e1.pxfuel.com/desktop-wallpaper/641/840/desktop-wallpaper-sky-blue-corner-design-sky-blue-design-background.jpg') no-repeat center center/cover ;
+    height: 900px;
+    width: 100%;
+    z-index:-1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid rgb(6, 91, 91);*/
+    align-items: center;
+    position: absolute;
+    top:30%;
+    left: 10%;
+}
+.heading{
+    font-family: century;
+    font-size: 3rem;
+    text-align: centre;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 30px;
+    background-color: transparent;
+    border:1px solid rgb(6, 91, 91);
+    color: rgb(6, 91, 91);
+    outline:none;
+    transition: .5s ease;
+    font-weight: bold;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color:rgb(10, 160, 160);
+    color: aquamarine;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.541), 0 0 10px rgba(0, 0, 255, 0.541), 0 0 15px rgba(0, 0, 255, 0.541);
+    font-weight: bold;
+
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 200%;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 250px;
+    height: 450px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44, 224, 224);
+    color:black;
+    align-items:center;
+    padding: 20px;
+    font-size: 50px;
+}
+.gallery{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display:flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom ,rgb(39, 174, 174)70%,rgb(231, 168, 168) 30%);
+    background-size: 100% 200%;
+    transition: all .7s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border:none;
+    box-shadow: 0 0 20px rgb(105, 74, 136);
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCSkUjqwK63JqkEIQl3EbvQIe0ttl0NFtj0g&usqp=CAU');
+    color:black;
+    padding: 10px;
+    font-size: 150%;
+    
+    
+    
+   
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+    
+}
+#msg{
+    width: 30%;
+    padding: 12px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding:10px;
+    width:20%;
+    margin:40px;
+    border: 0cap;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(116, 6, 6, 0.897);
+}
